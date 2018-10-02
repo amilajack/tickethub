@@ -1,0 +1,15 @@
+h1 Your order summary
+
+div
+	h3 Shipping address 
+
+	h3 Choose a delivery method:
+
+	form(action='buy/gooMap' method='GET')
+		input(type='radio' name='shippingMethod' value='ups')
+		|UPS #[br] #[br]
+		input(type='radio' name='shippingMethod' value='fedEx')
+		|FedEx #[br] #[br]
+		input(type='radio' name='shippingMethod' value='uber' checked)
+		|UBER #[br] #[br]
+		button(type='submit' value='submit') Submit
